@@ -1,0 +1,6 @@
+path: C:/Users/C00282704/PycharmProjects/PythonProject2/data
+train: images/train/Red_Lego
+val: images/train/Red_Lego
+
+names:
+  0: Red_Lego
