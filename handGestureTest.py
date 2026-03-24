@@ -14,7 +14,6 @@ from drone_safety import (
 
 # LOAD YOLO MODEL
 model = YOLO("yolov8n-cls.pt")
-results = model.train(data=r"C:/Users/C00282704/PycharmProjects/PythonProject2/data/images", epochs=1, plots=False)
 
 # CONNECT TO TELLO
 tello = Tello()
