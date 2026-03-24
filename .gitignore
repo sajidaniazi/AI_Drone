@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# YOLO outputs
+runs/
+*.pt
+
+# Cache files
+*.cache
+
+# PyCharm
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
