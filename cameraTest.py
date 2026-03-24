@@ -9,7 +9,7 @@ cap.set(3, 640)
 cap.set(4, 480)
 
 # model
-model = YOLO("C:/Users/C00282704/PycharmProjects/PythonProject2/AI_Drone/runs/detect/train6/weights/best.pt")
+model = YOLO("C:/Users/C00282704/PycharmProjects/PythonProject2/AI_Drone/runs/detect/train/weights/best.pt")
 
 # object classes
 classNames = ["Red_Lego"]
