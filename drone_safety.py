@@ -49,7 +49,7 @@ def allow_move():
 
 
 
-# SAFE MOVEMENT FUNCTIONS
+# For SAFE MOVEMENT FUNCTIONS
 
 def safe_move_up(tello):
     if is_safe(tello) and allow_move():
@@ -76,5 +76,5 @@ def safe_hover():
 
 # EMERGENCY STOP
 def emergency_land(tello):
-    print("🛑 EMERGENCY LAND")
+    print(" EMERGENCY LAND")
     tello.land()

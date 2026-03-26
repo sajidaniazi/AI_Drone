@@ -15,6 +15,7 @@ model = YOLO("C:/Users/C00282704/PycharmProjects/PythonProject2/AI_Drone/runs/de
 classNames = ["Red_Lego"]
 
 
+
 while True:
     success, img = cap.read()
     results = model(img, stream=True)
