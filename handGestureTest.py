@@ -13,6 +13,7 @@ from drone_safety import (
 )
 
 model = YOLO("yolov8n-cls.pt")
+#bettery check
 
 tello = Tello()
 tello.connect()
@@ -23,8 +24,9 @@ if tello.get_battery() < 20:
     exit()
 
 tello.takeoff()
-tello.move_up(30)
+tello.move_up(40) # change to 40
 
+#tello camera connection
 tello.streamon()
 frame_read = tello.get_frame_read()
 time.sleep(2)
@@ -86,7 +88,7 @@ while True:
 
     if frame is None:
         continue
-
+#resize frame
     frame = cv2.resize(frame, (640, 480))
     frame = cv2.flip(frame, 1)
 
@@ -94,7 +96,7 @@ while True:
     results = hands.process(rgb)
 
     command = "NONE"
-
+#gesture detection
     if results.multi_hand_landmarks:
         for hand_landmarks in results.multi_hand_landmarks:
             mp_draw.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
