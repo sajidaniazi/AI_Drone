@@ -1,6 +1,7 @@
-path: C:/Users/C00282704/PycharmProjects/PythonProject2/AI_Drone/data
+path: C:/Users/C00282704/AI_Drone/data
 train: images/train/Red_Lego
-val: images/train/Red_Lego
+val: images/val/Red_Lego
 
+nc: 1
 names:
   0: Red_Lego
