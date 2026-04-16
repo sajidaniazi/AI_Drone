@@ -1,0 +1,7 @@
+path: C:\Users\C00282704\Project\AI_Drone\data
+train: images/train
+val: images/val
+
+nc: 1
+names:
+  0: Red_Lego

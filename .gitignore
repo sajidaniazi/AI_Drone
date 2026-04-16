@@ -6,8 +6,6 @@ __pycache__/
 .venv/
 
 # YOLO outputs
-runs/
-*.pt
 
 # Cache files
 *.cache
